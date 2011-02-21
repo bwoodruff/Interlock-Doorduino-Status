@@ -1,0 +1,12 @@
+Usage:
+
+status.php - returns current door status
+status.php?status=1 - sets door status to open, returns 0 if successful
+status.php?status=0 - sets door status to closed, returns 0 if successful
+
+Error codes:
+1 - problem with the status.txt file (does not exist, permissions problems, etc)
+2 - request is not coming from the correct IP address and is denied
+3 - the data in status.txt doesn't make sense to the script. it should contain a single byte: 0 or 1
+4 - $word[0] and $word[1] aren't set correctly at the top of the script
+5 - the doorduino sent a malformed request
