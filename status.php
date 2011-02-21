@@ -2,17 +2,17 @@
 
 /* 	
 	Doorduino Status Script
-	Revision 0.1
+	Revision 0.2
 	Ben Woodruff <ben@interlockroc.org>
 	http://www.interlockroc.org/
 */
 
-// error_reporting(0);
+error_reporting(0);
 
-$interlockIP = "::1";//"173.85.245.53";
+$interlockIP = "173.85.245.53";
 $word[1] = "open! :)";
 $word[0] = "closed. :(";
-$statusFile = "/Users/bdw/Projects/Interlock-Doorduino/status.txt";//"status.txt";
+$statusFile = "status.txt";
 
 function checkFile() {
 
