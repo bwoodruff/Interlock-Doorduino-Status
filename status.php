@@ -2,7 +2,7 @@
 
 /* 	
 	Doorduino Status Script
-	Revision 0.2
+	Revision 0.3
 	Ben Woodruff <ben@interlockroc.org>
 	http://www.interlockroc.org/
 */
@@ -16,23 +16,19 @@ $statusFile = "status.txt";
 
 function checkFile() {
 
-	/*
-	// THIS SHOULD WORK BUT IT DOESN'T ON MY SYSTEM
 	$fileCheck = 1;
-	if(!file_exists($statusFile)) {
+	if(!file_exists(realpath(dirname(__FILE__) . $statusFile))) {
 		$fileCheck = 0;
 	}
-	if(!is_readable($statusFile)) {
+	if(!is_readable(realpath(dirname(__FILE__) . $statusFile))) {
 		$fileCheck = 0;
 	}
-	if(!is_writable($statusFile)) {
+	if(!is_writable(realpath(dirname(__FILE__) . $statusFile))) {
 		$fileCheck = 0;
 	}
 	
 	return $fileCheck;
-	*/
 
-	return true;
 }
 
 if(isset($_GET['status'])) {
