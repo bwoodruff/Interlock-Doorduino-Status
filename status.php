@@ -1,8 +1,8 @@
 <?php
 
 /* 	
-	Doorduino Status Script
-	Revision 0.3
+	Doorduino Status Script (PHP)
+	Revision 0.3.1
 	Ben Woodruff <ben@interlockroc.org>
 	http://www.interlockroc.org/
 */
